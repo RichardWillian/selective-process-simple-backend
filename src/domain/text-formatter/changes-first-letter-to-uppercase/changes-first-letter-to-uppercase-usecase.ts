@@ -1,24 +1,25 @@
+import '../../../shared/extensions/string';
 import HttpResponse from '../../../implementation/http-reponse';
-import '../../shared/extensions/string';
-import ChangesFirstLetterToUppercaseDto from './changes-first-letter-to-uppercase-dto';
+import CustomException from '../../../shared/custom-exception';
+import ChangesFirstLetterToUppercaseUseCaseDto from './changes-first-letter-to-uppercase-usecase-dto';
 import IChangesFirstLetterToUppercaseUseCase from './ichanges-first-letter-to-uppercase-usecase';
 
 export default class ChangesFirstLetterToUppercaseUseCase implements IChangesFirstLetterToUppercaseUseCase {
-    execute = (data:ChangesFirstLetterToUppercaseDto): HttpResponse => {
+    execute = (data:ChangesFirstLetterToUppercaseUseCaseDto): HttpResponse => {
         try {
-          let { name, surName } = data;
+          const { name, surName } = data;
           this.validate(name);
           this.validate(surName);
           
           return HttpResponse.ok(name.toCapitalize().concat(' ', surName));
-        } catch (err) {
-          return HttpResponse.serverError(err);
+        } catch (err: any|CustomException) {
+          return CustomException.toResponse(err);
         }
       }
 
       validate = (value:string) => {
         
         if(!value)
-          return HttpResponse.badRequest('Information cannot be empty');
+          throw new CustomException('Information cannot be empty', 400);
       }
 }

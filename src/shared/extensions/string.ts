@@ -8,4 +8,3 @@ declare global {
 String.prototype.toCapitalize = function (): string {
   return this.replace(/\b\w/g, s => s.toUpperCase())
 };
-  

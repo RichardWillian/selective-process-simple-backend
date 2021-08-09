@@ -1,7 +1,7 @@
 import { container } from 'tsyringe';
 import HttpResponse from "../../implementation/http-reponse";
 import HttpRequest from "../../implementation/http-request";
-import ChangesFirstLetterToUppercaseDto from "./changes-first-letter-to-uppercase/changes-first-letter-to-uppercase-dto";
+import ChangesFirstLetterToUppercaseDto from "./changes-first-letter-to-uppercase/changes-first-letter-to-uppercase-usecase-dto";
 import ChangesFirstLetterToUppercaseUseCase from "./changes-first-letter-to-uppercase/changes-first-letter-to-uppercase-usecase";
 
 export default class TextFormatterController {

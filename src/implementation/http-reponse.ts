@@ -1,3 +1,5 @@
+import CustomException from "../shared/custom-exception";
+
 export default class HttpResponse {
 
   statusCode!: number;
@@ -26,11 +28,12 @@ export default class HttpResponse {
     };
   }
 
-  static serverError(err: Error) {
+  static serverError(err: Error|CustomException) {
     return {
       statusCode: 500,
       body: {
         error: err.message,
+        stacktrace: err.stack
       },
     };
   }
