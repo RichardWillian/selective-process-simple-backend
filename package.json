@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "npx ts-node-dev --inspect --ignore-watch node_modules server.ts",
+    "tsc-init": "tsc --init",
+    "build": "tsc"
+  },
+  "keywords": [
+    "server"
+  ],
+  "dependencies": {
+    "@types/node": "^16.4.13",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.4",
+    "tsc": "^2.0.3",
+    "tsyringe": "^4.6.0",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24"
+  }
+}
