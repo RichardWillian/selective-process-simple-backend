@@ -22,7 +22,7 @@ describe('SumValuesInArrayUseCase', () => {
     });
   
     expect(result.statusCode).toBe(400);
-    expect(result.body.message).toBe('Information cannot be empty');
+    expect(result.body.message).toBe('Array cannot be empty');
   });
 
   it('Must return "BadRequest" error when there is any alphanumeric in array', async () => {

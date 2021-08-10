@@ -2,6 +2,7 @@ import 'reflect-metadata';
 import express from 'express';
 import cors from 'cors';
 import calculatorRoute from './main/routes/calculator-route';
+import dataGroupingRoute from './main/routes/data-grouping-route';
 import textFormatterRoute from './main/routes/text-formatter-route';
 
 const app = express();
@@ -15,6 +16,7 @@ app.use((req, res, next) => {
 });
 
 app.use('/calculator', calculatorRoute);
+app.use('/data-grouping', dataGroupingRoute);
 app.use('/text-formatter', textFormatterRoute);
 
 export default app;

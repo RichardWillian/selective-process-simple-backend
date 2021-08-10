@@ -5,6 +5,6 @@ import ExpressRouterAdapter from '../adapters/express-router-adapter';
 const router = express.Router();
 
 const calculatorController = new CalculatorController();
-router.post('/sum-values', ExpressRouterAdapter.adapt(calculatorController.SumValuesInArray));
+router.post('/sum-values', ExpressRouterAdapter.adapt(calculatorController.sumValuesInArray));
 
 export default router;

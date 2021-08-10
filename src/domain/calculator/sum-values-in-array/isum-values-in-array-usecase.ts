@@ -1,6 +1,6 @@
 import HttpResponse from '../../../implementation/http-reponse';
-import ChangesFirstLetterToUppercaseUseCaseDto from './sum-values-in-array-usecase-dto';
+import SumValuesInArrayUseCaseDto from './sum-values-in-array-usecase-dto';
 
-export default interface IChangesFirstLetterToUppercaseUseCase {
-  execute(data: ChangesFirstLetterToUppercaseUseCaseDto): HttpResponse;
+export default interface ISumValuesInArrayUseCase {
+  execute(data: SumValuesInArrayUseCaseDto): HttpResponse;
 }

@@ -5,7 +5,7 @@ import SumValuesInArrayUseCaseDto from "./sum-values-in-array/sum-values-in-arra
 import SumValuesInArrayUseCase from "./sum-values-in-array/sum-values-in-array-usecase";
 
 export default class CalculatorController {
-    SumValuesInArray = (httpRequest: HttpRequest): HttpResponse => {
+    sumValuesInArray = (httpRequest: HttpRequest): HttpResponse => {
       const data = httpRequest.body as SumValuesInArrayUseCaseDto;
       const useCase = container.resolve(SumValuesInArrayUseCase);
       return useCase.execute(data);
