@@ -1,19 +1,19 @@
 import '../../../shared/extensions/array';
 import HttpResponse from '../../../shared/http-reponse';
-import DataGroupingInArrayUseCaseDto from '../dtos/data-grouping-in-array-usecase-dto';
-import IDataGroupingInArrayUseCase from './idata-grouping-in-array-usecase';
+import RemoveDuplicatedInArrayUseCaseDto from '../dtos/data-grouping-in-array-usecase-dto';
+import IRemoveDuplicatedInArrayUseCase from './iremove-duplicated-in-array-usecase';
 import CustomException from '../../../shared/custom-exception';
 
-export default class DataGroupingInArrayUseCase implements IDataGroupingInArrayUseCase {
-    execute = (data:DataGroupingInArrayUseCaseDto): HttpResponse => {
+export default class RemoveDuplicatedInArrayUseCase implements IRemoveDuplicatedInArrayUseCase {
+    execute = (data:RemoveDuplicatedInArrayUseCaseDto): HttpResponse => {
         try {
           const { values } = data;
 
           this.validate(values);
 
-          const dataGrouping = values.filter((i, value) => values.indexOf(i) === value);
+          const RemoveDuplicated = values.filter((i, value) => values.indexOf(i) === value);
 
-          return HttpResponse.ok(dataGrouping);
+          return HttpResponse.ok(RemoveDuplicated);
         } catch (err: any | CustomException) {
           return CustomException.toResponse(err);
         }

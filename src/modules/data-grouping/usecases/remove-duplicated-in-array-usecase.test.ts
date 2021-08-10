@@ -1,10 +1,10 @@
-import IDataGroupingInArrayUseCase from './idata-grouping-in-array-usecase';
-import DataGroupingInArrayUseCase from './data-grouping-in-array-usecase';
+import IRemoveDuplicatedInArrayUseCase from './iremove-duplicated-in-array-usecase';
+import RemoveDuplicatedInArrayUseCase from './remove-duplicated-in-array-usecase';
 
-let useCase: IDataGroupingInArrayUseCase;
-describe('DataGroupingInArrayUseCase', () => {
+let useCase: IRemoveDuplicatedInArrayUseCase;
+describe('RemoveDuplicatedInArrayUseCase', () => {
   beforeEach(() => {
-    useCase = new DataGroupingInArrayUseCase();
+    useCase = new RemoveDuplicatedInArrayUseCase();
   });
 
   it('Must return array values grouped', async () => {

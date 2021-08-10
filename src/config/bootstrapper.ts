@@ -6,11 +6,11 @@ import IChangesFirstLetterToUppercaseUseCase from '../modules/text-formatter/use
 import SumValuesInArrayUseCase from '../modules/calculator/usecases/sum-values-in-array-usecase';
 import ISumValuesInArrayUseCase from '../modules/calculator/usecases/isum-values-in-array-usecase';
 
-import DataGroupingInArrayUseCase from '../modules/data-grouping/usecases/data-grouping-in-array-usecase';
-import IDataGroupingInArrayUseCase from '../modules/data-grouping/usecases/idata-grouping-in-array-usecase';
+import RemoveDuplicatedInArrayUseCase from '../modules/data-grouping/usecases/remove-duplicated-in-array-usecase';
+import IRemoveDuplicatedInArrayUseCase from '../modules/data-grouping/usecases/iremove-duplicated-in-array-usecase';
 
 container.registerSingleton<IChangesFirstLetterToUppercaseUseCase>('ChangesFirstLetterToUppercaseUseCase', ChangesFirstLetterToUppercaseUseCase);
 
 container.registerSingleton<ISumValuesInArrayUseCase>('SumValuesInArrayUseCase', SumValuesInArrayUseCase);
 
-container.registerSingleton<IDataGroupingInArrayUseCase>('DataGroupingInArrayUseCase', DataGroupingInArrayUseCase);
+container.registerSingleton<IRemoveDuplicatedInArrayUseCase>('RemoveDuplicatedInArrayUseCase', RemoveDuplicatedInArrayUseCase);

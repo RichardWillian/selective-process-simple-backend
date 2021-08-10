@@ -65,7 +65,7 @@
 			"response": []
 		},
 		{
-			"name": "Data Grouping",
+			"name": "Remove Duplicated",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -79,14 +79,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/data-grouping/",
+					"raw": "http://localhost:3000/remove-duplicated/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"data-grouping",
+						"remove-duplicated",
 						""
 					]
 				}

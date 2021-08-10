@@ -2,7 +2,7 @@ import 'reflect-metadata';
 import express from 'express';
 import cors from 'cors';
 import calculatorRoute from './modules/calculator/infra/http/routes/calculator-route';
-import dataGroupingRoute from './modules/data-grouping/infra/http/routes/data-grouping-route';
+import removeDuplicatedRoute from './modules/data-grouping/infra/http/routes/remove-duplicated-route';
 import textFormatterRoute from './modules/text-formatter/infra/routes/text-formatter-route';
 
 const app = express();
@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 });
 
 app.use('/calculator', calculatorRoute);
-app.use('/data-grouping', dataGroupingRoute);
+app.use('/remove-duplicated', removeDuplicatedRoute);
 app.use('/text-formatter', textFormatterRoute);
 
 export default app;

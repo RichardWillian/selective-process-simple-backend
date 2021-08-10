@@ -4,9 +4,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "npx ts-node-dev --inspect --ignore-watch node_modules server.ts",
-    "tsc-init": "tsc --init",
-    "build": "tsc"
+    "start": "npx ts-node-dev --inspect --ignore-watch node_modules server.ts"
   },
   "keywords": [
     "server"
@@ -17,6 +15,7 @@
     "express": "^4.17.1",
     "jest": "^27.0.6",
     "reflect-metadata": "^0.1.13",
+    "swagger-ui-express": "^4.1.6",
     "ts-jest": "^27.0.4",
     "tsc": "^2.0.3",
     "tsyringe": "^4.6.0",
