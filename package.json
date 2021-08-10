@@ -4,7 +4,8 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "npx ts-node-dev --inspect --ignore-watch node_modules server.ts"
+    "start": "npx ts-node-dev --inspect --ignore-watch node_modules server.ts",
+    "test:ci": "npx jest --coverage --silent test --testResultsProcessor"
   },
   "keywords": [
     "server"
