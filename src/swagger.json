@@ -64,7 +64,7 @@
         "tags": [
           "UseCases"
         ],
-        "sumary": "Calculator - Sum Values in Array",
+        "summary": "Calculator",
         "description": "This use case is responsible for receiving an 'array of numbers' and returning the sum of the values",
         "requestBody": {
           "content": {
@@ -74,12 +74,14 @@
                 "items": {
                   "type": "integer"
                 },
-                "example": [
-                  "1",
-                  "2",
-                  "3",
-                  "4"
-                ]
+                "example": {
+                  "values": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                  ]
+                }
               }
             }
           }
@@ -110,7 +112,7 @@
         "tags": [
           "UseCases"
         ],
-        "sumary": "Remove Duplicated",
+        "summary": "Remove Duplicated",
         "description": "This route is responsible for removing duplicate items from an array.",
         "requestBody": {
           "content": {
@@ -120,12 +122,14 @@
                 "items": {
                   "type": "object"
                 },
-                "example": [
-                  "2",
-                  "Richard",
-                  "Richard",
-                  "4"
-                ]
+                "example": {
+                  "values": [
+                    "2",
+                    "Richard",
+                    "Richard",
+                    "4"
+                  ]
+                }
               }
             }
           }
