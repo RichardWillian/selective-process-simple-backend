@@ -1,4 +1,4 @@
-import HttpResponse from "../implementation/http-reponse";
+import HttpResponse from "./http-reponse";
 
 export default class CustomException {
     public readonly stack!: string;

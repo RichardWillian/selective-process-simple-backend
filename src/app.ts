@@ -1,9 +1,9 @@
 import 'reflect-metadata';
 import express from 'express';
 import cors from 'cors';
-import calculatorRoute from './main/routes/calculator-route';
-import dataGroupingRoute from './main/routes/data-grouping-route';
-import textFormatterRoute from './main/routes/text-formatter-route';
+import calculatorRoute from './modules/calculator/infra/http/routes/calculator-route';
+import dataGroupingRoute from './modules/data-grouping/infra/http/routes/data-grouping-route';
+import textFormatterRoute from './modules/text-formatter/infra/routes/text-formatter-route';
 
 const app = express();
 
