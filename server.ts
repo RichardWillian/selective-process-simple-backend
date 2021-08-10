@@ -1,6 +1,5 @@
-import http from 'http'
 import app from './src/app'
 
-const port = process.env.PORT || 3000
-const server = http.createServer(app)
-server.listen(port)
+app.listen(3000, () => {
+    console.log("Check the Documentation: http://localhost:3000/api-docs")
+});
