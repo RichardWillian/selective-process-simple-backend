@@ -105,12 +105,12 @@
         }
       }
     },
-    "/data-grouping": {
+    "/remove-duplicated": {
       "post": {
         "tags": [
           "UseCases"
         ],
-        "sumary": "Data Grouping",
+        "sumary": "Remove Duplicated",
         "description": "This route is responsible for removing duplicate items from an array.",
         "requestBody": {
           "content": {
@@ -121,10 +121,10 @@
                   "type": "object"
                 },
                 "example": [
-                  "1",
-                  "Name",
-                  "Name",
-                  "3"
+                  "2",
+                  "Richard",
+                  "Richard",
+                  "4"
                 ]
               }
             }
@@ -147,9 +147,9 @@
                     "type": "object"
                   },
                   "example": [
-                    "1",
-                    "Name",
-                    "3"
+                    "2",
+                    "Richard",
+                    "4"
                   ]
                 }
               }

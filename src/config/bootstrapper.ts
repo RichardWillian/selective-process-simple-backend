@@ -6,8 +6,8 @@ import IChangesFirstLetterToUppercaseUseCase from '../modules/text-formatter/use
 import SumValuesInArrayUseCase from '../modules/calculator/usecases/sum-values-in-array-usecase';
 import ISumValuesInArrayUseCase from '../modules/calculator/usecases/isum-values-in-array-usecase';
 
-import RemoveDuplicatedInArrayUseCase from '../modules/data-grouping/usecases/remove-duplicated-in-array-usecase';
-import IRemoveDuplicatedInArrayUseCase from '../modules/data-grouping/usecases/iremove-duplicated-in-array-usecase';
+import RemoveDuplicatedInArrayUseCase from '../modules/remove-duplicated/usecases/remove-duplicated-in-array-usecase';
+import IRemoveDuplicatedInArrayUseCase from '../modules/remove-duplicated/usecases/iremove-duplicated-in-array-usecase';
 
 container.registerSingleton<IChangesFirstLetterToUppercaseUseCase>('ChangesFirstLetterToUppercaseUseCase', ChangesFirstLetterToUppercaseUseCase);
 

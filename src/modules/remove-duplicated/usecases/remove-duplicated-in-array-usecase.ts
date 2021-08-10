@@ -1,6 +1,6 @@
 import '../../../shared/extensions/array';
 import HttpResponse from '../../../shared/http-reponse';
-import RemoveDuplicatedInArrayUseCaseDto from '../dtos/data-grouping-in-array-usecase-dto';
+import RemoveDuplicatedInArrayUseCaseDto from '../dtos/remove-duplicated-in-array-usecase-dto';
 import IRemoveDuplicatedInArrayUseCase from './iremove-duplicated-in-array-usecase';
 import CustomException from '../../../shared/custom-exception';
 

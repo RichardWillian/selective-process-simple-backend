@@ -4,7 +4,7 @@ import cors from 'cors';
 import swaggerUi from 'swagger-ui-express';
 import swaggerDocs from './swagger.json';
 import calculatorRoute from './modules/calculator/infra/http/routes/calculator-route';
-import removeDuplicatedRoute from './modules/data-grouping/infra/http/routes/remove-duplicated-route';
+import removeDuplicatedRoute from './modules/remove-duplicated/infra/http/routes/remove-duplicated-route';
 import textFormatterRoute from './modules/text-formatter/infra/routes/text-formatter-route';
 
 const app = express();

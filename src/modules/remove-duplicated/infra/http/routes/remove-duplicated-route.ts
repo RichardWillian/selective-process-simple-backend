@@ -1,5 +1,5 @@
 import express from 'express';
-import RemoveDuplicatedController from '../controllers/data-grouping-controller';
+import RemoveDuplicatedController from '../controllers/remove-duplicated-controller';
 import ExpressRouterAdapter from '../../../../../config/adapters/express-router-adapter';
 
 const router = express.Router();

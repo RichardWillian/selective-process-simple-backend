@@ -1,7 +1,7 @@
 import { container } from 'tsyringe';
 import HttpResponse from "../../../../../shared/http-reponse";
 import HttpRequest from "../../../../../shared/http-request";
-import RemoveDuplicatedInArrayUseCaseDto from "../../../dtos/data-grouping-in-array-usecase-dto";
+import RemoveDuplicatedInArrayUseCaseDto from "../../../dtos/remove-duplicated-in-array-usecase-dto";
 import RemoveDuplicatedInArrayUseCase from "../../../usecases/remove-duplicated-in-array-usecase";
 
 export default class RemoveDuplicatedController {
