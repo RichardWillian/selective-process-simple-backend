@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "b72c4c53-9fff-4209-8d92-6b0ac65c5c9c",
+		"name": "Develon Selective Process",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Text Formatter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/text-formatter/richard/willian",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"text-formatter",
+						"richard",
+						"willian"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calculator - Sum Values in Array",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"values\": [\r\n        1,\r\n        2,\r\n        3,\r\n        6\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/calculator/sum-values",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"calculator",
+						"sum-values"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Data Grouping",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"values\": [\r\n        1,\r\n        \"richard\",\r\n        2,\r\n        3,\r\n        1,\r\n        3,\r\n        \"marco\",\r\n        2,\r\n        \"marco\",\r\n        4,\r\n        \"richard\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/data-grouping/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"data-grouping",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
